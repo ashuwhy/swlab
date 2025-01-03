@@ -1,6 +1,6 @@
 # Software Engineering Course Repository
 
-Welcome to the Software Engineering Course Repository. This repository is designed to serve as a comprehensive resource for students enrolled in the Software Engineering course. Here, you will find a collection of lab exercises, theory notes, and other relevant materials that will be updated regularly.
+Welcome to the Software Engineering Course Repository. This repository is designed to serve as a comprehensive resource for me and students enrolled in the Software Engineering course. Here, you will find a collection of lab exercises, theory notes, and other relevant materials that will be updated regularly.
 
 ## Course Overview
 
@@ -8,8 +8,8 @@ The Software Engineering course aims to provide students with a solid foundation
 
 ## Repository Structure
 
-- **/labs**: Contains all lab exercises and assignments. Each lab is organized in its own subdirectory with relevant instructions and resources.
-- **/theory**: Includes lecture notes, slides, and other theoretical materials.
+- **theory** *N*: Includes lecture notes, slides, and other theoretical materials.
+- **/lab** *N*:: Contains all lab exercises and assignments. Each lab is organized in its own subdirectory with relevant instructions and resources.
 - **/resources**: Additional resources such as reading materials, reference links, and tools.
 
 ## How to Use This Repository
@@ -26,22 +26,6 @@ The Software Engineering course aims to provide students with a solid foundation
    ```bash
    git pull origin main
    ```
-
-## Contribution Guidelines
-
-Students are encouraged to contribute to this repository by submitting improvements or additional resources. Please follow these steps to contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or improvement.
-3. Submit a pull request with a detailed description of your changes.
-
-## Contact Information
-
-For any questions or further information, please contact the course instructor:
-
-- **Instructor Name**: Jibesh Patra
-- **Email**: [Your Email]
-- **Office Hours**: [Your Office Hours]
 
 ## License
 
