@@ -39,7 +39,7 @@ Students are encouraged to contribute to this repository by submitting improveme
 
 For any questions or further information, please contact the course instructor:
 
-- **Instructor Name**: [Your Name]
+- **Instructor Name**: Jibesh Patra
 - **Email**: [Your Email]
 - **Office Hours**: [Your Office Hours]
 

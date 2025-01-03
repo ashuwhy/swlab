@@ -1,3 +1,5 @@
+//author: Ashutosh Sharma
+
 #include <stdio.h>
 
 // Recursive function to find the sum of two strings
