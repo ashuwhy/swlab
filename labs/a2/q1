@@ -1,0 +1,43 @@
+Create a file with the name ROLLNO_week1_q1.cpp and write a C++ program to print numbers with the following requirement.
+
+Ask user the start number
+Print five numbers 
+Ask the user again for the end number 
+Print numbers until the end number
+You may not use any pointers or reference in your program
+You may not use any global variables
+All incrementing of the number should be strictly done inside the get_num_after_increment and not anywhere else.
+Use the following template:
+
+#include <iostream>
+
+using namespace std;
+
+int get_num_after_increment(int k)
+{
+// You must increment only in this function.
+// Do not change the signature of this function. Do not use a global variable.
+}
+int main()
+{
+// Complete this code
+return 0;
+}
+The following is a sample run:
+Enter a start: 12
+12
+13
+14
+15
+16
+Printed five numbers. Enter end: 26
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
