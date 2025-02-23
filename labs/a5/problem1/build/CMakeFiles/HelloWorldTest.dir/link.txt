@@ -1,0 +1,1 @@
+/usr/bin/c++  -fprofile-arcs -ftest-coverage  -fprofile-arcs -ftest-coverage CMakeFiles/HelloWorldTest.dir/tests/test_hello_world.cpp.o CMakeFiles/HelloWorldTest.dir/src/hello_world.cpp.o -o HelloWorldTest 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -fprofile-arcs -ftest-coverage  -fprofile-arcs -ftest-coverage CMakeFiles/mystring_test.dir/tests/MyStringTest.cpp.o -o mystring_test  libmystring.a 

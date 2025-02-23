@@ -1,0 +1,7 @@
+/home/sysprog/Desktop/Software/assignment5/my_string/build/CMakeFiles/mystring.dir
+/home/sysprog/Desktop/Software/assignment5/my_string/build/CMakeFiles/mystring_test.dir
+/home/sysprog/Desktop/Software/assignment5/my_string/build/CMakeFiles/coverage.dir
+/home/sysprog/Desktop/Software/assignment5/my_string/build/CMakeFiles/coverage_clean.dir
+/home/sysprog/Desktop/Software/assignment5/my_string/build/CMakeFiles/test.dir
+/home/sysprog/Desktop/Software/assignment5/my_string/build/CMakeFiles/edit_cache.dir
+/home/sysprog/Desktop/Software/assignment5/my_string/build/CMakeFiles/rebuild_cache.dir

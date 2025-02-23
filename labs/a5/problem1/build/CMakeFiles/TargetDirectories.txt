@@ -1,0 +1,7 @@
+/home/sysprog/Desktop/Software/assignment5/problem1/build/CMakeFiles/HelloWorldProject.dir
+/home/sysprog/Desktop/Software/assignment5/problem1/build/CMakeFiles/HelloWorldTest.dir
+/home/sysprog/Desktop/Software/assignment5/problem1/build/CMakeFiles/coverage.dir
+/home/sysprog/Desktop/Software/assignment5/problem1/build/CMakeFiles/coverage_clean.dir
+/home/sysprog/Desktop/Software/assignment5/problem1/build/CMakeFiles/test.dir
+/home/sysprog/Desktop/Software/assignment5/problem1/build/CMakeFiles/edit_cache.dir
+/home/sysprog/Desktop/Software/assignment5/problem1/build/CMakeFiles/rebuild_cache.dir

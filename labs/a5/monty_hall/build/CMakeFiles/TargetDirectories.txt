@@ -1,0 +1,3 @@
+/home/sysprog/Desktop/Software/assignment5/monty_hall/build/CMakeFiles/monty_hall_game.dir
+/home/sysprog/Desktop/Software/assignment5/monty_hall/build/CMakeFiles/edit_cache.dir
+/home/sysprog/Desktop/Software/assignment5/monty_hall/build/CMakeFiles/rebuild_cache.dir

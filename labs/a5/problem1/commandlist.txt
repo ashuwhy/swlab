@@ -1,0 +1,7 @@
+cd build/
+cmake ..
+make
+./HelloWorldProject
+./HelloWorldTest
+make coverage #check coverage
+make coverage_clean #clean coverage

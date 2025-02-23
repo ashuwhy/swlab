@@ -1,0 +1,6 @@
+cd build/
+cmake ..
+make
+./mystring_test
+make coverage
+make coverage_clean #when done
