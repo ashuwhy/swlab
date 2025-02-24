@@ -15,16 +15,26 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y cmake build-essential
       
+      - name: Create directories
+        run: |
+          mkdir -p build
+          mkdir -p docs
+          mkdir -p src/templates
+      
       - name: Build
         run: |
-          mkdir build
           cd build
           cmake ..
           make
-          ./directory_browser ../
+          
+      - name: Generate site
+        run: |
+          cd build
+          ./directory_browser .. -o ../docs
           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
+          force_orphan: true
