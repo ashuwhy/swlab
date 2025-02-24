@@ -9,18 +9,55 @@
 
 namespace fs = std::filesystem;
 
+// Forward declaration for the internal recursive function.
+namespace {
+    void generateSiteRecursive(const std::string &inputPath,
+                               const std::string &outputPath,
+                               const std::string &globalOutputDir);
+}
+
 void HtmlGenerator::generateSite(const std::string& inputPath, const std::string& outputPath) {
-    fs::create_directories(outputPath);
-    
-    // Copy CSS file
-    fs::copy_file("templates/style.css", outputPath + "/style.css", 
-                  fs::copy_options::overwrite_existing);
-    
-    auto entries = DirectoryScanner::scanDirectory(inputPath);
-    std::string html = generateDirectoryPage(inputPath, entries);
-    
-    std::ofstream outFile(outputPath + "/index.html");
-    outFile << html;
+    // Determine the global output directory name (e.g. "docs")
+    std::string globalOutputDir = fs::path(outputPath).filename().string();
+    generateSiteRecursive(inputPath, outputPath, globalOutputDir);
+}
+
+namespace {
+    void generateSiteRecursive(const std::string &inputPath,
+                               const std::string &outputPath,
+                               const std::string &globalOutputDir) {
+        // Create output folder for the current directory.
+        fs::create_directories(outputPath);
+        
+        // Copy CSS file (only if not already present)
+        if (!fs::exists(outputPath + "/style.css"))
+            fs::copy_file("templates/style.css", outputPath + "/style.css", 
+                          fs::copy_options::overwrite_existing);
+        
+        // Scan the current directory.
+        auto entries = DirectoryScanner::scanDirectory(inputPath);
+        
+        // Generate HTML page for current directory.
+        std::string html = HtmlGenerator::generateDirectoryPage(inputPath, entries);
+        
+        // Write index.html for the current directory.
+        std::ofstream outFile(outputPath + "/index.html");
+        outFile << html;
+        outFile.close();
+        
+        // Recursively generate subdirectory pages.
+        for (const auto& entry : entries) {
+            if (entry.isDirectory) {
+                // Skip if this folder is the designated output folder.
+                if (entry.name == globalOutputDir)
+                    continue;
+                
+                std::string subInput = entry.path;
+                std::string subOutput = outputPath + "/" + entry.name;
+                generateSiteRecursive(subInput, subOutput, globalOutputDir);
+            }
+        }
+    }
 }
 
 std::string HtmlGenerator::generateDirectoryPage(const std::string& path, 
