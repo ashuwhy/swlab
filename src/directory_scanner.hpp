@@ -8,6 +8,7 @@ struct FileEntry {
     bool isDirectory;
     std::string path;
     size_t size;
+    std::filesystem::file_time_type lastModified;
 };
 
 class DirectoryScanner {

@@ -3,6 +3,8 @@
 #include <sstream>
 #include <filesystem>
 #include <iostream>
+#include <chrono>
+#include <iomanip>
 
 namespace fs = std::filesystem;
 
@@ -25,39 +27,67 @@ std::string HtmlGenerator::generateDirectoryPage(const std::string& path,
     std::stringstream ss;
     ss << readTemplate("templates/header.html");
     
+    // Add breadcrumb navigation using repo-relative paths
+    ss << "<div class='breadcrumb'>\n";
+    ss << "<a href='/swlab/'>root</a> / "; // Replace 'swlab' with your repo name
+    
+    std::string currentPath;
+    std::istringstream pathStream(path);
+    std::string segment;
+    while (std::getline(pathStream, segment, '/')) {
+        if (!segment.empty() && segment != ".") {
+            currentPath += segment + "/";
+            ss << "<a href='/swlab/" << currentPath << "'>" << segment << "</a> / ";
+        }
+    }
+    ss << "</div>\n";
+    
     ss << "<div class='directory-list'>\n";
-    ss << "<h2>Directory: " << path << "</h2>\n";
     
     // Add parent directory link if not in root
     if (path != "." && path != "./") {
-        ss << "<p><a href='..'>📁 Parent Directory</a></p>\n";
+        ss << "<p><a href='/swlab/" << DirectoryScanner::getRelativePath(".", path) << "'><span class='file-icon'>📁</span>Parent Directory</a></p>\n";
     }
     
     ss << "<table>\n";
-    ss << "<tr><th>Name</th><th>Type</th><th>Size</th></tr>\n";
+    ss << "<tr><th>Name</th><th>Type</th><th>Size</th><th>Last Modified</th></tr>\n";
     
-    for (const auto& entry : entries) {
+    // Sort entries: directories first, then files, both alphabetically
+    std::vector<FileEntry> sortedEntries = entries;
+    std::sort(sortedEntries.begin(), sortedEntries.end(), 
+        [](const FileEntry& a, const FileEntry& b) {
+            if (a.isDirectory != b.isDirectory) {
+                return a.isDirectory > b.isDirectory;
+            }
+            return a.name < b.name;
+        });
+    
+    for (const auto& entry : sortedEntries) {
         ss << "<tr>";
         if (entry.isDirectory) {
-            // Create a subdirectory and its index.html
-            std::string subdir = entry.path;
-            std::string relativeSubdir = DirectoryScanner::getRelativePath(".", subdir);
-            auto subEntries = DirectoryScanner::scanDirectory(subdir);
-            
-            // Create subdirectory in docs
-            std::filesystem::create_directories("docs/" + relativeSubdir);
-            
-            // Generate subdirectory page
-            std::ofstream subFile("docs/" + relativeSubdir + "/index.html");
-            subFile << generateDirectoryPage(subdir, subEntries);
-            
-            // Create link to subdirectory
-            ss << "<td><a href='" << relativeSubdir << "'>📁 " << entry.name << "</a></td>";
+            // Use repo-relative paths instead of filesystem paths
+            std::string relativeSubdir = DirectoryScanner::getRelativePath(".", entry.path);
+            ss << "<td><a href='/swlab/" << relativeSubdir << "'>"
+               << "<span class='file-icon'>📁</span>" << entry.name 
+               << "</a></td>";
         } else {
-            ss << "<td>📄 " << entry.name << "</td>";
+            // For files, link to GitHub's raw content
+            ss << "<td><a href='https://github.com/ashuwhy/swlab/blob/main/" 
+               << entry.path << "' target='_blank'>"
+               << "<span class='file-icon'>📄</span>" << entry.name 
+               << "</a></td>";
         }
         ss << "<td>" << (entry.isDirectory ? "Directory" : "File") << "</td>";
         ss << "<td>" << formatSize(entry.size) << "</td>";
+        
+        // Add last modified time (you'll need to add this to FileEntry)
+        auto ftime = std::filesystem::last_write_time(entry.path);
+        auto sctp = std::chrono::time_point_cast<std::chrono::system_clock::duration>(
+            ftime - std::filesystem::file_time_type::clock::now() + 
+            std::chrono::system_clock::now());
+        std::time_t cftime = std::chrono::system_clock::to_time_t(sctp);
+        ss << "<td>" << std::put_time(std::localtime(&cftime), "%Y-%m-%d %H:%M:%S") << "</td>";
+        
         ss << "</tr>\n";
     }
     

@@ -4,6 +4,9 @@ project(DirectoryBrowser)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Add include directory
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
 # Create templates directory and copy files
 file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/templates)
 
@@ -16,7 +19,7 @@ file(WRITE ${CMAKE_BINARY_DIR}/templates/style.css
     background: #f5f5f5;
 }
 header {
-    background: #333;
+    background: #24292e;
     color: white;
     padding: 1em;
     margin-bottom: 2em;
@@ -32,13 +35,33 @@ table {
     border-collapse: collapse;
 }
 th, td {
-    padding: 10px;
+    padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #eee;
 }
 th {
-    background: #f5f5f5;
-}")
+    background: #f8f9fa;
+    font-weight: 600;
+}
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.file-icon {
+    margin-right: 8px;
+    color: #586069;
+}
+.breadcrumb {
+    margin-bottom: 1em;
+    padding: 8px;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #e1e4e8;
+}
+")
 
 add_executable(directory_browser 
     src/main.cpp
