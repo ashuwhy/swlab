@@ -27,12 +27,35 @@ std::string HtmlGenerator::generateDirectoryPage(const std::string& path,
     
     ss << "<div class='directory-list'>\n";
     ss << "<h2>Directory: " << path << "</h2>\n";
+    
+    // Add parent directory link if not in root
+    if (path != "." && path != "./") {
+        ss << "<p><a href='..'>📁 Parent Directory</a></p>\n";
+    }
+    
     ss << "<table>\n";
     ss << "<tr><th>Name</th><th>Type</th><th>Size</th></tr>\n";
     
     for (const auto& entry : entries) {
         ss << "<tr>";
-        ss << "<td>" << entry.name << "</td>";
+        if (entry.isDirectory) {
+            // Create a subdirectory and its index.html
+            std::string subdir = entry.path;
+            std::string relativeSubdir = DirectoryScanner::getRelativePath(".", subdir);
+            auto subEntries = DirectoryScanner::scanDirectory(subdir);
+            
+            // Create subdirectory in docs
+            std::filesystem::create_directories("docs/" + relativeSubdir);
+            
+            // Generate subdirectory page
+            std::ofstream subFile("docs/" + relativeSubdir + "/index.html");
+            subFile << generateDirectoryPage(subdir, subEntries);
+            
+            // Create link to subdirectory
+            ss << "<td><a href='" << relativeSubdir << "'>📁 " << entry.name << "</a></td>";
+        } else {
+            ss << "<td>📄 " << entry.name << "</td>";
+        }
         ss << "<td>" << (entry.isDirectory ? "Directory" : "File") << "</td>";
         ss << "<td>" << formatSize(entry.size) << "</td>";
         ss << "</tr>\n";
