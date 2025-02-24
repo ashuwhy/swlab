@@ -23,6 +23,11 @@ jobs:
           mkdir -p build
           mkdir -p docs
           mkdir -p src/templates
+          mkdir -p include
+      
+      - name: Download httplib
+        run: |
+          curl -o include/httplib.h https://raw.githubusercontent.com/yhirose/cpp-httplib/master/httplib.h
       
       - name: Build
         run: |
