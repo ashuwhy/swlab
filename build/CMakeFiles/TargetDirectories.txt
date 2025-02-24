@@ -1,0 +1,3 @@
+/Volumes/part_one/IIT/4th Semester/Software Engineering/build/CMakeFiles/directory_browser.dir
+/Volumes/part_one/IIT/4th Semester/Software Engineering/build/CMakeFiles/edit_cache.dir
+/Volumes/part_one/IIT/4th Semester/Software Engineering/build/CMakeFiles/rebuild_cache.dir
