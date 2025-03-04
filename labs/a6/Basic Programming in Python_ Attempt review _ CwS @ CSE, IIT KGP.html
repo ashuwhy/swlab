@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&cmid=956 -->
+<html dir="ltr" lang="en" xml:lang="en" data-bs-theme="light" class="yui3-js-enabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Basic Programming in Python: Attempt review | CwS @ CSE, IIT KGP</title>
+    <link rel="shortcut icon" href="https://moodlecse.iitkgp.ac.in/moodle/theme/image.php/boost_union/theme/1734536235/favicon">
+    
+<meta name="keywords" content="moodle, Basic Programming in Python: Attempt review | CwS @ CSE, IIT KGP">
+<link rel="stylesheet" type="text/css" href="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/combo"><script charset="utf-8" id="yui_3_18_1_1_1741106828331_8" src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/javascript.php" async=""></script><script charset="utf-8" id="yui_3_18_1_1_1741106828331_32" src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/javascript(1).php" async=""></script><script charset="utf-8" id="yui_3_18_1_1_1741106828331_33" src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/javascript(2).php" async=""></script><script charset="utf-8" id="yui_3_18_1_1_1741106828331_34" src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/combo(1)" async=""></script><script charset="utf-8" id="yui_3_18_1_1_1741106828331_38" src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/combo(2)" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/styles.php">
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/moodlecse.iitkgp.ac.in\/moodle","homeurl":{},"sesskey":"sKdFjpFqY2","sessiontimeout":"14400","sessiontimeoutwarning":"1200","themerev":"1734536235","slasharguments":1,"theme":"boost_union","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1734535163","admin":"admin","svgicons":true,"usertimezone":"Asia\/Kolkata","language":"en","courseId":46,"courseContextId":19621,"contextid":20870,"contextInstanceId":956,"langrev":1734535163,"templaterev":"1734535163"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/lib\/yuilib\/3.18.1\/","comboBase":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/theme\/yui_combo.php?m\/1734535163\/","combine":true,"comboBase":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/theme\/yui_combo.php?","ext":false,"root":"m\/1734535163\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_ipaddress-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1734535163\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/lib\/javascript.php\/1734535163\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/lib\/javascript.php\/1734535163\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"core_question_flags":{"name":"core_question_flags","fullpath":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/lib\/javascript.php\/1734535163\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]},"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/lib\/javascript.php\/1734535163\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/lib\/javascript.php\/1734535163\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine"]}},"logInclude":[],"logExclude":[],"logLevel":null};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<link rel="stylesheet" type="text/css" href="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/showClock.css">
+<script src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/showClock.js"></script>
+
+<!-- link rel="stylesheet" type="text/css" href="/moodle/lib/clock/analog_clock.css" -->
+<!-- script src="/moodle/lib/clock/analog_clock.js"></script -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/requirejs.php"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/javascript(3).php"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript">
+                // Boost Union JS to change the completion indication if enabled.
+                if (document.body.classList.contains('hascourseindexcmicons')) {
+                    // Completion indication should be encoded in cm icon.
+                    if (document.body.classList.contains('hascourseindexcplicon')) {
+                        // Completion indication not shown at start of line anymore.
+                        document.querySelectorAll('.courseindex-item[data-id="639"] span.completioninfo')[0].dataset.for = '_';
+
+                        // The completion indication within the icon is now the active one.
+                        document.querySelectorAll('.courseindex-item[data-id="639"] span.completioninfo')[1].dataset.for = 'cm_completion';
+
+                        // Changes to this completion indication will be observed.
+                        const observer = new MutationObserver(function(mutations) {
+                            mutations.forEach(function(mutation) {
+                                let node = mutation.target.childNodes[3];
+                                if (node.id.startsWith('courseindex-cmicon-cplid-')) {
+                                    let cplel = document.getElementById(node.id);
+                                    // Set the completion color for the icon based on the completion status.
+                                    switch (node.dataset.value) {
+                                        case 'NaN':
+                                            break;
+                                        case '0':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-incomplete');
+                                            break;
+                                        case '1':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-complete');
+                                            break;
+                                        case '3':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-fail');
+                                            break;
+                                    }
+                                }
+                            });
+                        });
+                        observer.observe(document.getElementById('courseindex-cmicon-observ-639'), {attributes: true, childList: true});
+
+                    // Or completion indication should be shown at the end of the line.
+                    } else if (document.body.classList.contains('hascourseindexcpleol')) {
+                        // Completion indication not shown at start of line anymore.
+                        document.querySelectorAll('.courseindex-item[data-id="639"] span.completioninfo')[0].dataset.for = '_';
+
+                        // The completion indication at the end of the line is now the active one.
+                        document.querySelectorAll('.courseindex-item[data-id="639"] span.completioninfo')[2].dataset.for = 'cm_completion';
+                    }
+                }
+
+                // Unmodified Moodle core JS of this template:
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-639');
+                });
+                ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-439');
+    });
+    ;
+
+                // Boost Union JS to change the completion indication if enabled.
+                if (document.body.classList.contains('hascourseindexcmicons')) {
+                    // Completion indication should be encoded in cm icon.
+                    if (document.body.classList.contains('hascourseindexcplicon')) {
+                        // Completion indication not shown at start of line anymore.
+                        document.querySelectorAll('.courseindex-item[data-id="650"] span.completioninfo')[0].dataset.for = '_';
+
+                        // The completion indication within the icon is now the active one.
+                        document.querySelectorAll('.courseindex-item[data-id="650"] span.completioninfo')[1].dataset.for = 'cm_completion';
+
+                        // Changes to this completion indication will be observed.
+                        const observer = new MutationObserver(function(mutations) {
+                            mutations.forEach(function(mutation) {
+                                let node = mutation.target.childNodes[3];
+                                if (node.id.startsWith('courseindex-cmicon-cplid-')) {
+                                    let cplel = document.getElementById(node.id);
+                                    // Set the completion color for the icon based on the completion status.
+                                    switch (node.dataset.value) {
+                                        case 'NaN':
+                                            break;
+                                        case '0':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-incomplete');
+                                            break;
+                                        case '1':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-complete');
+                                            break;
+                                        case '3':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-fail');
+                                            break;
+                                    }
+                                }
+                            });
+                        });
+                        observer.observe(document.getElementById('courseindex-cmicon-observ-650'), {attributes: true, childList: true});
+
+                    // Or completion indication should be shown at the end of the line.
+                    } else if (document.body.classList.contains('hascourseindexcpleol')) {
+                        // Completion indication not shown at start of line anymore.
+                        document.querySelectorAll('.courseindex-item[data-id="650"] span.completioninfo')[0].dataset.for = '_';
+
+                        // The completion indication at the end of the line is now the active one.
+                        document.querySelectorAll('.courseindex-item[data-id="650"] span.completioninfo')[2].dataset.for = 'cm_completion';
+                    }
+                }
+
+                // Unmodified Moodle core JS of this template:
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-650');
+                });
+                ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-440');
+    });
+    ;
+
+                // Boost Union JS to change the completion indication if enabled.
+                if (document.body.classList.contains('hascourseindexcmicons')) {
+                    // Completion indication should be encoded in cm icon.
+                    if (document.body.classList.contains('hascourseindexcplicon')) {
+                        // Completion indication not shown at start of line anymore.
+                        document.querySelectorAll('.courseindex-item[data-id="663"] span.completioninfo')[0].dataset.for = '_';
+
+                        // The completion indication within the icon is now the active one.
+                        document.querySelectorAll('.courseindex-item[data-id="663"] span.completioninfo')[1].dataset.for = 'cm_completion';
+
+                        // Changes to this completion indication will be observed.
+                        const observer = new MutationObserver(function(mutations) {
+                            mutations.forEach(function(mutation) {
+                                let node = mutation.target.childNodes[3];
+                                if (node.id.startsWith('courseindex-cmicon-cplid-')) {
+                                    let cplel = document.getElementById(node.id);
+                                    // Set the completion color for the icon based on the completion status.
+                                    switch (node.dataset.value) {
+                                        case 'NaN':
+                                            break;
+                                        case '0':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-incomplete');
+                                            break;
+                                        case '1':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-complete');
+                                            break;
+                                        case '3':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-fail');
+                                            break;
+                                    }
+                                }
+                            });
+                        });
+                        observer.observe(document.getElementById('courseindex-cmicon-observ-663'), {attributes: true, childList: true});
+
+                    // Or completion indication should be shown at the end of the line.
+                    } else if (document.body.classList.contains('hascourseindexcpleol')) {
+                        // Completion indication not shown at start of line anymore.
+                        document.querySelectorAll('.courseindex-item[data-id="663"] span.completioninfo')[0].dataset.for = '_';
+
+                        // The completion indication at the end of the line is now the active one.
+                        document.querySelectorAll('.courseindex-item[data-id="663"] span.completioninfo')[2].dataset.for = 'cm_completion';
+                    }
+                }
+
+                // Unmodified Moodle core JS of this template:
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-663');
+                });
+                ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-441');
+    });
+    ;
+
+                // Boost Union JS to change the completion indication if enabled.
+                if (document.body.classList.contains('hascourseindexcmicons')) {
+                    // Completion indication should be encoded in cm icon.
+                    if (document.body.classList.contains('hascourseindexcplicon')) {
+                        // Completion indication not shown at start of line anymore.
+                        document.querySelectorAll('.courseindex-item[data-id="728"] span.completioninfo')[0].dataset.for = '_';
+
+                        // The completion indication within the icon is now the active one.
+                        document.querySelectorAll('.courseindex-item[data-id="728"] span.completioninfo')[1].dataset.for = 'cm_completion';
+
+                        // Changes to this completion indication will be observed.
+                        const observer = new MutationObserver(function(mutations) {
+                            mutations.forEach(function(mutation) {
+                                let node = mutation.target.childNodes[3];
+                                if (node.id.startsWith('courseindex-cmicon-cplid-')) {
+                                    let cplel = document.getElementById(node.id);
+                                    // Set the completion color for the icon based on the completion status.
+                                    switch (node.dataset.value) {
+                                        case 'NaN':
+                                            break;
+                                        case '0':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-incomplete');
+                                            break;
+                                        case '1':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-complete');
+                                            break;
+                                        case '3':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-fail');
+                                            break;
+                                    }
+                                }
+                            });
+                        });
+                        observer.observe(document.getElementById('courseindex-cmicon-observ-728'), {attributes: true, childList: true});
+
+                    // Or completion indication should be shown at the end of the line.
+                    } else if (document.body.classList.contains('hascourseindexcpleol')) {
+                        // Completion indication not shown at start of line anymore.
+                        document.querySelectorAll('.courseindex-item[data-id="728"] span.completioninfo')[0].dataset.for = '_';
+
+                        // The completion indication at the end of the line is now the active one.
+                        document.querySelectorAll('.courseindex-item[data-id="728"] span.completioninfo')[2].dataset.for = 'cm_completion';
+                    }
+                }
+
+                // Unmodified Moodle core JS of this template:
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-728');
+                });
+                ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-442');
+    });
+    ;
+
+                // Boost Union JS to change the completion indication if enabled.
+                if (document.body.classList.contains('hascourseindexcmicons')) {
+                    // Completion indication should be encoded in cm icon.
+                    if (document.body.classList.contains('hascourseindexcplicon')) {
+                        // Completion indication not shown at start of line anymore.
+                        document.querySelectorAll('.courseindex-item[data-id="851"] span.completioninfo')[0].dataset.for = '_';
+
+                        // The completion indication within the icon is now the active one.
+                        document.querySelectorAll('.courseindex-item[data-id="851"] span.completioninfo')[1].dataset.for = 'cm_completion';
+
+                        // Changes to this completion indication will be observed.
+                        const observer = new MutationObserver(function(mutations) {
+                            mutations.forEach(function(mutation) {
+                                let node = mutation.target.childNodes[3];
+                                if (node.id.startsWith('courseindex-cmicon-cplid-')) {
+                                    let cplel = document.getElementById(node.id);
+                                    // Set the completion color for the icon based on the completion status.
+                                    switch (node.dataset.value) {
+                                        case 'NaN':
+                                            break;
+                                        case '0':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-incomplete');
+                                            break;
+                                        case '1':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-complete');
+                                            break;
+                                        case '3':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-fail');
+                                            break;
+                                    }
+                                }
+                            });
+                        });
+                        observer.observe(document.getElementById('courseindex-cmicon-observ-851'), {attributes: true, childList: true});
+
+                    // Or completion indication should be shown at the end of the line.
+                    } else if (document.body.classList.contains('hascourseindexcpleol')) {
+                        // Completion indication not shown at start of line anymore.
+                        document.querySelectorAll('.courseindex-item[data-id="851"] span.completioninfo')[0].dataset.for = '_';
+
+                        // The completion indication at the end of the line is now the active one.
+                        document.querySelectorAll('.courseindex-item[data-id="851"] span.completioninfo')[2].dataset.for = 'cm_completion';
+                    }
+                }
+
+                // Unmodified Moodle core JS of this template:
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-851');
+                });
+                ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-443');
+    });
+    ;
+
+                // Boost Union JS to change the completion indication if enabled.
+                if (document.body.classList.contains('hascourseindexcmicons')) {
+                    // Completion indication should be encoded in cm icon.
+                    if (document.body.classList.contains('hascourseindexcplicon')) {
+                        // Completion indication not shown at start of line anymore.
+                        document.querySelectorAll('.courseindex-item[data-id="858"] span.completioninfo')[0].dataset.for = '_';
+
+                        // The completion indication within the icon is now the active one.
+                        document.querySelectorAll('.courseindex-item[data-id="858"] span.completioninfo')[1].dataset.for = 'cm_completion';
+
+                        // Changes to this completion indication will be observed.
+                        const observer = new MutationObserver(function(mutations) {
+                            mutations.forEach(function(mutation) {
+                                let node = mutation.target.childNodes[3];
+                                if (node.id.startsWith('courseindex-cmicon-cplid-')) {
+                                    let cplel = document.getElementById(node.id);
+                                    // Set the completion color for the icon based on the completion status.
+                                    switch (node.dataset.value) {
+                                        case 'NaN':
+                                            break;
+                                        case '0':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-incomplete');
+                                            break;
+                                        case '1':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-complete');
+                                            break;
+                                        case '3':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-fail');
+                                            break;
+                                    }
+                                }
+                            });
+                        });
+                        observer.observe(document.getElementById('courseindex-cmicon-observ-858'), {attributes: true, childList: true});
+
+                    // Or completion indication should be shown at the end of the line.
+                    } else if (document.body.classList.contains('hascourseindexcpleol')) {
+                        // Completion indication not shown at start of line anymore.
+                        document.querySelectorAll('.courseindex-item[data-id="858"] span.completioninfo')[0].dataset.for = '_';
+
+                        // The completion indication at the end of the line is now the active one.
+                        document.querySelectorAll('.courseindex-item[data-id="858"] span.completioninfo')[2].dataset.for = 'cm_completion';
+                    }
+                }
+
+                // Unmodified Moodle core JS of this template:
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-858');
+                });
+                ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-549');
+    });
+    ;
+
+                // Boost Union JS to change the completion indication if enabled.
+                if (document.body.classList.contains('hascourseindexcmicons')) {
+                    // Completion indication should be encoded in cm icon.
+                    if (document.body.classList.contains('hascourseindexcplicon')) {
+                        // Completion indication not shown at start of line anymore.
+                        document.querySelectorAll('.courseindex-item[data-id="921"] span.completioninfo')[0].dataset.for = '_';
+
+                        // The completion indication within the icon is now the active one.
+                        document.querySelectorAll('.courseindex-item[data-id="921"] span.completioninfo')[1].dataset.for = 'cm_completion';
+
+                        // Changes to this completion indication will be observed.
+                        const observer = new MutationObserver(function(mutations) {
+                            mutations.forEach(function(mutation) {
+                                let node = mutation.target.childNodes[3];
+                                if (node.id.startsWith('courseindex-cmicon-cplid-')) {
+                                    let cplel = document.getElementById(node.id);
+                                    // Set the completion color for the icon based on the completion status.
+                                    switch (node.dataset.value) {
+                                        case 'NaN':
+                                            break;
+                                        case '0':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-incomplete');
+                                            break;
+                                        case '1':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-complete');
+                                            break;
+                                        case '3':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-fail');
+                                            break;
+                                    }
+                                }
+                            });
+                        });
+                        observer.observe(document.getElementById('courseindex-cmicon-observ-921'), {attributes: true, childList: true});
+
+                    // Or completion indication should be shown at the end of the line.
+                    } else if (document.body.classList.contains('hascourseindexcpleol')) {
+                        // Completion indication not shown at start of line anymore.
+                        document.querySelectorAll('.courseindex-item[data-id="921"] span.completioninfo')[0].dataset.for = '_';
+
+                        // The completion indication at the end of the line is now the active one.
+                        document.querySelectorAll('.courseindex-item[data-id="921"] span.completioninfo')[2].dataset.for = 'cm_completion';
+                    }
+                }
+
+                // Unmodified Moodle core JS of this template:
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-921');
+                });
+                ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-561');
+    });
+    ;
+
+                // Boost Union JS to change the completion indication if enabled.
+                if (document.body.classList.contains('hascourseindexcmicons')) {
+                    // Completion indication should be encoded in cm icon.
+                    if (document.body.classList.contains('hascourseindexcplicon')) {
+                        // Completion indication not shown at start of line anymore.
+                        document.querySelectorAll('.courseindex-item[data-id="956"] span.completioninfo')[0].dataset.for = '_';
+
+                        // The completion indication within the icon is now the active one.
+                        document.querySelectorAll('.courseindex-item[data-id="956"] span.completioninfo')[1].dataset.for = 'cm_completion';
+
+                        // Changes to this completion indication will be observed.
+                        const observer = new MutationObserver(function(mutations) {
+                            mutations.forEach(function(mutation) {
+                                let node = mutation.target.childNodes[3];
+                                if (node.id.startsWith('courseindex-cmicon-cplid-')) {
+                                    let cplel = document.getElementById(node.id);
+                                    // Set the completion color for the icon based on the completion status.
+                                    switch (node.dataset.value) {
+                                        case 'NaN':
+                                            break;
+                                        case '0':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-incomplete');
+                                            break;
+                                        case '1':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-complete');
+                                            break;
+                                        case '3':
+                                            cplel.closest('.courseindex-cmicon-container').classList.add('courseindex-cmicon-cpl-fail');
+                                            break;
+                                    }
+                                }
+                            });
+                        });
+                        observer.observe(document.getElementById('courseindex-cmicon-observ-956'), {attributes: true, childList: true});
+
+                    // Or completion indication should be shown at the end of the line.
+                    } else if (document.body.classList.contains('hascourseindexcpleol')) {
+                        // Completion indication not shown at start of line anymore.
+                        document.querySelectorAll('.courseindex-item[data-id="956"] span.completioninfo')[0].dataset.for = '_';
+
+                        // The completion indication at the end of the line is now the active one.
+                        document.querySelectorAll('.courseindex-item[data-id="956"] span.completioninfo')[2].dataset.for = 'cm_completion';
+                    }
+                }
+
+                // Unmodified Moodle core JS of this template:
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-956');
+                });
+                ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-571');
+    });
+    ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-574');
+    });
+    ;
+
+require(['core_courseformat/local/courseindex/courseindex'], function(component) {
+    component.init('course-index');
+});
+</script></head>
+<body id="page-mod-quiz-review" class="format-topics path-mod path-mod-quiz chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam moodlecse-iitkgp-ac-in--moodle pagelayout-incourse course-46 context-20870 cmid-956 cm-type-quiz category-7 theme uses-drawers nocourseindexcmicons theme_boost-union-footerbuttondesktop jsenabled scrolled" cz-shortcut-listen="true" data-new-gr-c-s-check-loaded="14.1224.0" data-gr-ext-installed="">
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+<div id="page-wrapper" class="d-print-block">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#maincontent">Skip to main content</a>
+</div><script src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/javascript(4).php"></script>
+<script src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/combo(3)"></script><script src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/javascript(5).php"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    
+    <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand " aria-label="Site navigation">
+    
+        <button class="navbar-toggler aabtn d-block d-md-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_boost-drawers-primary">
+            <span class="navbar-toggler-icon"></span>
+            <span class="sr-only">Side panel</span>
+        </button>
+    
+        <a href="https://moodlecse.iitkgp.ac.in/moodle/" class="navbar-brand align-items-center m-0 mr-4 p-0 aabtn   d-none d-md-flex  ">
+    
+                CwS @ CSE, IIT KGP
+        </a>
+            <div class="primary-navigation">
+                <nav class="moremenu navigation observed">
+                    <ul id="moremenu-67c72e8c49b1c-navbar-nav" role="menubar" class="nav more-nav navbar-nav">
+                                    <li data-key="home" class="nav-item " role="none" data-forceintomoremenu="false">
+                                                <a role="menuitem" class="nav-link   " href="https://moodlecse.iitkgp.ac.in/moodle/" data-disableactive="true" tabindex="0" aria-current="true">
+                                                    Home
+                                                </a>
+                                    </li>
+                                    <li data-key="mycourses" class="nav-item " role="none" data-forceintomoremenu="false">
+                                                <a role="menuitem" class="nav-link   " href="https://moodlecse.iitkgp.ac.in/moodle/my/courses.php" data-disableactive="true" tabindex="-1">
+                                                    My courses
+                                                </a>
+                                    </li>
+                            <li role="none" class="nav-item dropdown dropdownmoremenu d-none" data-region="morebutton">
+                                <a class="dropdown-toggle nav-link " href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#" id="moremenu-dropdown-67c72e8c49b1c" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                    More
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-left" data-region="moredropdown" aria-labelledby="moremenu-dropdown-67c72e8c49b1c" role="menu">
+                                </ul>
+                            </li>
+                    </ul>
+                </nav>
+            </div>
+    
+        <ul class="navbar-nav d-none d-md-flex my-1 px-1">
+            <!-- page_heading_menu -->
+            
+        </ul>
+    
+        <div id="usernavigation" class="navbar-nav ml-auto">
+            <div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="19279" data-region="popover-region">
+    <div class="popover-region-toggle nav-link icon-no-margin" data-region="popover-region-toggle" role="button" aria-controls="popover-region-container-67c72e8c4aad967c72e8c44e4b4" aria-haspopup="true" aria-label=" Show notification window with no new notifications   " tabindex="0">
+                <i class="icon fa fa-bell-o fa-fw " title="Toggle notifications menu" role="img" aria-label="Toggle notifications menu"></i>
+        <div class="count-container hidden" data-region="count-container" aria-hidden="true">
+            0
+        </div>
+
+    </div>
+    <div id="popover-region-container-67c72e8c4aad967c72e8c44e4b4" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Notification window" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#" title="Mark all as read" data-action="mark-all-read" role="button" aria-label="Mark all as read">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true"></i></span>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" role="img" aria-label="Loading"></i></span>
+        </a>
+            <a href="https://moodlecse.iitkgp.ac.in/moodle/message/notificationpreferences.php" title="Notification preferences" aria-label="Notification preferences">
+                <i class="icon fa fa-cog fa-fw " aria-hidden="true"></i></a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications" data-region="all-notifications" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" role="img" aria-label="Loading"></i></span>
+        </div>
+                <a class="see-all-link" href="https://moodlecse.iitkgp.ac.in/moodle/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div>
+            <div id="nav-clocks"><div id="server-clock"><span class="timeInfo">Server Time: </span>Tue  10:17:43 PM</div><div id="client-clock"><span class="timeInfo">Your Time: </span>Tue  10:17:42 PM</div></div><div class="d-flex align-items-stretch usermenu-container" data-region="usermenu">
+                    <div class="usermenu">
+                            <div class="dropdown show">
+                                <a href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#" role="button" id="user-menu-toggle" data-toggle="dropdown" aria-label="User menu" aria-haspopup="true" aria-controls="user-action-menu" class="btn dropdown-toggle">
+                                    <span class="userbutton">
+                                        <span class="avatars">
+                                                <span class="avatar current">
+                                                    <span class="userinitials size-35" title="Ashutosh Sharma" aria-label="Ashutosh Sharma" role="img">AS</span>
+                                                </span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <div id="user-action-menu" class="dropdown-menu dropdown-menu-right">
+                                    <div id="usermenu-carousel" class="carousel slide" data-touch="false" data-interval="false" data-keyboard="false">
+                                        <div class="carousel-inner">
+                                            <div id="carousel-item-main" class="carousel-item active" role="menu" tabindex="-1" aria-label="User">
+                                                    <div class="loggedinas">
+                                                        <small>You are logged in as:</small><br>
+                                                        <strong>Ashutosh Sharma</strong>
+                                                    </div>
+                                                    <div class="dropdown-divider"></div>
+                                                        <a href="https://moodlecse.iitkgp.ac.in/moodle/user/profile.php" class="dropdown-item " role="menuitem" tabindex="-1">
+                                                                
+                                                            Profile
+                                                        </a>
+                                                    
+                                                        <a href="https://moodlecse.iitkgp.ac.in/moodle/grade/report/overview/index.php" class="dropdown-item " role="menuitem" tabindex="-1">
+                                                                
+                                                            Grades
+                                                        </a>
+                                                    
+                                                        <a href="https://moodlecse.iitkgp.ac.in/moodle/calendar/view.php?view=month" class="dropdown-item " role="menuitem" tabindex="-1">
+                                                                
+                                                            Calendar
+                                                        </a>
+                                                    
+                                                        <a href="https://moodlecse.iitkgp.ac.in/moodle/user/files.php" class="dropdown-item " role="menuitem" tabindex="-1">
+                                                                
+                                                            Private files
+                                                        </a>
+                                                    
+                                                        <a href="https://moodlecse.iitkgp.ac.in/moodle/reportbuilder/index.php" class="dropdown-item " role="menuitem" tabindex="-1">
+                                                                
+                                                            Reports
+                                                        </a>
+                                                    
+                                                    <div class="dropdown-divider"></div>
+                                                        <a href="https://moodlecse.iitkgp.ac.in/moodle/user/preferences.php" class="dropdown-item " role="menuitem" tabindex="-1">
+                                                                
+                                                            Preferences
+                                                        </a>
+                                                    <div class="dropdown-divider"></div>
+                                                        <a href="https://moodlecse.iitkgp.ac.in/moodle/login/logout.php?sesskey=sKdFjpFqY2" class="dropdown-item " role="menuitem" tabindex="-1">
+                                                                
+                                                            Log out
+                                                        </a>
+                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            
+    
+        </div>
+    </nav>
+    
+<div class="drawer drawer-left drawer-primary d-print-none" data-region="fixed-drawer" id="theme_boost-drawers-primary" data-preference="" data-state="show-drawer-primary" data-forceopen="0" data-close-on-resize="1" aria-hidden="true">
+    <div class="drawerheader">
+        <button class="btn drawertoggle icon-no-margin hidden" data-toggler="drawers" data-action="closedrawer" data-target="theme_boost-drawers-primary" data-toggle="tooltip" data-placement="right" title="Close drawer" data-aria-hidden-tab-index="" tabindex="-1">
+            <i class="icon fa fa-times fa-fw " aria-hidden="true"></i>
+        </button>
+                    <span class="sitename" title="CwS @ CSE, IIT KGP">CwS @ CSE, IIT KGP</span>
+
+        <div class="drawerheadercontent hidden">
+            
+        </div>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller">
+                <div class="list-group">
+                <a href="https://moodlecse.iitkgp.ac.in/moodle/" class=" list-group-item list-group-item-action  " data-aria-hidden-tab-index="" tabindex="-1">
+                    Home
+                </a>
+                <a href="https://moodlecse.iitkgp.ac.in/moodle/my/courses.php" class=" list-group-item list-group-item-action  " data-aria-hidden-tab-index="" tabindex="-1">
+                    My courses
+                </a>
+        </div>
+
+    </div>
+</div>
+        <div class="drawer drawer-left d-print-none" data-region="fixed-drawer" id="theme_boost-drawers-courseindex" data-preference="drawer-open-index" data-state="show-drawer-left" data-forceopen="0" data-close-on-resize="0" aria-hidden="true">
+    <div class="drawerheader">
+        <button class="btn drawertoggle icon-no-margin hidden" data-toggler="drawers" data-action="closedrawer" data-target="theme_boost-drawers-courseindex" data-toggle="tooltip" data-placement="right" title="Close course index" data-aria-hidden-tab-index="" tabindex="-1">
+            <i class="icon fa fa-times fa-fw " aria-hidden="true"></i>
+        </button>
+        
+        <div class="drawerheadercontent hidden">
+                            <div id="courseindexdrawercontrols" class="dropdown">
+                    <button class="btn btn-icon rounded-circle mx-2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Course index options" data-aria-hidden-tab-index="" tabindex="-1">
+                        <i class="icon fa fa-ellipsis-v fa-fw m-0" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#" data-action="expandallcourseindexsections" data-aria-hidden-tab-index="" tabindex="-1">
+                            <i class="icon fa fa-angles-down fa-fw " aria-hidden="true"></i>
+                            Expand all
+                        </a>
+                        <a class="dropdown-item" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#" data-action="collapseallcourseindexsections" data-aria-hidden-tab-index="" tabindex="-1">
+                            <span class="dir-rtl-hide"><i class="icon fa fa-angles-right fa-fw " aria-hidden="true"></i></span>
+                            <span class="dir-ltr-hide"><i class="icon fa fa-angles-left fa-fw " aria-hidden="true"></i></span>
+                            Collapse all
+                        </a>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller">
+                        <nav id="courseindex" class="courseindex">
+    <div id="courseindex-content">
+        <div id="course-index" class="courseindex " role="tree">
+
+
+    <div class="courseindex-section " id="course-index-section-439" data-for="section" data-id="439" data-number="0" role="treeitem" aria-owns="courseindexcollapse0" tabindex="-1" aria-selected="true" data-aria-hidden-tab-index="0">
+        <div class="courseindex-item d-flex courseindex-section-title" id="courseindexsection0" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#courseindexcollapse0" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse0" tabindex="-1" data-aria-hidden-tab-index="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Expand" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Expand</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Collapse" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Collapse</span>
+                </span>
+            </a>
+            <a href="https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=46#section-0" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1" data-aria-hidden-tab-index="-1">
+                General
+            </a>
+            <span class="current-badge badge badge-primary ml-2 px-2 rounded-pill" tabindex="-1">
+                Highlighted
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse0" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection0" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="439" role="group" tabindex="-1">
+
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-639" data-for="cm" data-id="639" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span id="courseindex-cmicon-cplid-0-none" class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <span class="courseindex-cmicon-container" tabindex="-1">
+                        <span class="courseindex-cmicon" tabindex="-1">
+                            <span class="courseindex-cmicon-icon" id="courseindex-cmicon-observ-639" tabindex="-1">
+                                <img class="icon " src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/monologo.svg" alt="" title="" tabindex="-1">
+                                <span class="completioninfo courseindex-cmicon-cpl-icon" data-for="_" data-value="NaN" tabindex="-1"></span>
+                            </span>
+                        </span>
+                    </span>
+                    <a class="courseindex-link text-truncate" href="https://moodlecse.iitkgp.ac.in/moodle/mod/forum/view.php?id=639" data-for="cm_name" tabindex="-1" data-aria-hidden-tab-index="-1">
+                        Announcements
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="ml-auto" tabindex="-1">
+                        <span class="completioninfo courseindex-cmicon-cpl-eol" data-for="_" data-value="NaN" tabindex="-1"></span>
+                        <span class="dragicon" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="courseindex-section " id="course-index-section-440" data-for="section" data-id="440" data-number="1" role="treeitem" aria-owns="courseindexcollapse1" tabindex="-1" aria-selected="false">
+        <div class="courseindex-item d-flex courseindex-section-title" id="courseindexsection1" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#courseindexcollapse1" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse1" tabindex="-1" data-aria-hidden-tab-index="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Expand" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Expand</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Collapse" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Collapse</span>
+                </span>
+            </a>
+            <a href="https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=46#section-1" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1" data-aria-hidden-tab-index="-1">
+                Topic 1
+            </a>
+            <span class="current-badge badge badge-primary ml-2 px-2 rounded-pill" tabindex="-1">
+                Highlighted
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse1" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection1" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="440" role="group" tabindex="-1">
+
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-650" data-for="cm" data-id="650" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span id="courseindex-cmicon-cplid-1-none" class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <span class="courseindex-cmicon-container" tabindex="-1">
+                        <span class="courseindex-cmicon" tabindex="-1">
+                            <span class="courseindex-cmicon-icon" id="courseindex-cmicon-observ-650" tabindex="-1">
+                                <img class="icon " src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/monologo(1).svg" alt="" title="" tabindex="-1">
+                                <span class="completioninfo courseindex-cmicon-cpl-icon" data-for="_" data-value="NaN" tabindex="-1"></span>
+                            </span>
+                        </span>
+                    </span>
+                    <a class="courseindex-link text-truncate" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/view.php?id=650" data-for="cm_name" tabindex="-1" data-aria-hidden-tab-index="-1">
+                        Week-0: C Programmig Practice
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="ml-auto" tabindex="-1">
+                        <span class="completioninfo courseindex-cmicon-cpl-eol" data-for="_" data-value="NaN" tabindex="-1"></span>
+                        <span class="dragicon" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="courseindex-section " id="course-index-section-441" data-for="section" data-id="441" data-number="2" role="treeitem" aria-owns="courseindexcollapse2" tabindex="-1" aria-selected="false">
+        <div class="courseindex-item d-flex courseindex-section-title" id="courseindexsection2" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#courseindexcollapse2" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse2" tabindex="-1" data-aria-hidden-tab-index="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Expand" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Expand</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Collapse" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Collapse</span>
+                </span>
+            </a>
+            <a href="https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=46#section-2" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1" data-aria-hidden-tab-index="-1">
+                Topic 2
+            </a>
+            <span class="current-badge badge badge-primary ml-2 px-2 rounded-pill" tabindex="-1">
+                Highlighted
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse2" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection2" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="441" role="group" tabindex="-1">
+
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-663" data-for="cm" data-id="663" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span id="courseindex-cmicon-cplid-2-none" class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <span class="courseindex-cmicon-container" tabindex="-1">
+                        <span class="courseindex-cmicon" tabindex="-1">
+                            <span class="courseindex-cmicon-icon" id="courseindex-cmicon-observ-663" tabindex="-1">
+                                <img class="icon " src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/monologo(1).svg" alt="" title="" tabindex="-1">
+                                <span class="completioninfo courseindex-cmicon-cpl-icon" data-for="_" data-value="NaN" tabindex="-1"></span>
+                            </span>
+                        </span>
+                    </span>
+                    <a class="courseindex-link text-truncate" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/view.php?id=663" data-for="cm_name" tabindex="-1" data-aria-hidden-tab-index="-1">
+                        Week 1: Basic C++ Programming
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="ml-auto" tabindex="-1">
+                        <span class="completioninfo courseindex-cmicon-cpl-eol" data-for="_" data-value="NaN" tabindex="-1"></span>
+                        <span class="dragicon" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="courseindex-section " id="course-index-section-442" data-for="section" data-id="442" data-number="3" role="treeitem" aria-owns="courseindexcollapse3" tabindex="-1" aria-selected="false">
+        <div class="courseindex-item d-flex courseindex-section-title" id="courseindexsection3" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#courseindexcollapse3" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse3" tabindex="-1" data-aria-hidden-tab-index="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Expand" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Expand</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Collapse" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Collapse</span>
+                </span>
+            </a>
+            <a href="https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=46#section-3" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1" data-aria-hidden-tab-index="-1">
+                Topic 3
+            </a>
+            <span class="current-badge badge badge-primary ml-2 px-2 rounded-pill" tabindex="-1">
+                Highlighted
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse3" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection3" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="442" role="group" tabindex="-1">
+
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-728" data-for="cm" data-id="728" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span id="courseindex-cmicon-cplid-3-none" class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <span class="courseindex-cmicon-container" tabindex="-1">
+                        <span class="courseindex-cmicon" tabindex="-1">
+                            <span class="courseindex-cmicon-icon" id="courseindex-cmicon-observ-728" tabindex="-1">
+                                <img class="icon " src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/monologo(1).svg" alt="" title="" tabindex="-1">
+                                <span class="completioninfo courseindex-cmicon-cpl-icon" data-for="_" data-value="NaN" tabindex="-1"></span>
+                            </span>
+                        </span>
+                    </span>
+                    <a class="courseindex-link text-truncate" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/view.php?id=728" data-for="cm_name" tabindex="-1" data-aria-hidden-tab-index="-1">
+                        Unit Testing
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="ml-auto" tabindex="-1">
+                        <span class="completioninfo courseindex-cmicon-cpl-eol" data-for="_" data-value="NaN" tabindex="-1"></span>
+                        <span class="dragicon" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="courseindex-section " id="course-index-section-443" data-for="section" data-id="443" data-number="4" role="treeitem" aria-owns="courseindexcollapse4" tabindex="-1" aria-selected="false">
+        <div class="courseindex-item d-flex courseindex-section-title" id="courseindexsection4" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#courseindexcollapse4" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse4" tabindex="-1" data-aria-hidden-tab-index="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Expand" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Expand</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Collapse" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Collapse</span>
+                </span>
+            </a>
+            <a href="https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=46#section-4" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1" data-aria-hidden-tab-index="-1">
+                Topic 4
+            </a>
+            <span class="current-badge badge badge-primary ml-2 px-2 rounded-pill" tabindex="-1">
+                Highlighted
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse4" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection4" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="443" role="group" tabindex="-1">
+
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-851" data-for="cm" data-id="851" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span id="courseindex-cmicon-cplid-4-none" class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <span class="courseindex-cmicon-container" tabindex="-1">
+                        <span class="courseindex-cmicon" tabindex="-1">
+                            <span class="courseindex-cmicon-icon" id="courseindex-cmicon-observ-851" tabindex="-1">
+                                <img class="icon " src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/monologo(1).svg" alt="" title="" tabindex="-1">
+                                <span class="completioninfo courseindex-cmicon-cpl-icon" data-for="_" data-value="NaN" tabindex="-1"></span>
+                            </span>
+                        </span>
+                    </span>
+                    <a class="courseindex-link text-truncate" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/view.php?id=851" data-for="cm_name" tabindex="-1" data-aria-hidden-tab-index="-1">
+                        Code Coverage
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="ml-auto" tabindex="-1">
+                        <span class="completioninfo courseindex-cmicon-cpl-eol" data-for="_" data-value="NaN" tabindex="-1"></span>
+                        <span class="dragicon" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="courseindex-section " id="course-index-section-549" data-for="section" data-id="549" data-number="5" role="treeitem" aria-owns="courseindexcollapse5" tabindex="-1" aria-selected="false">
+        <div class="courseindex-item d-flex courseindex-section-title" id="courseindexsection5" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#courseindexcollapse5" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse5" tabindex="-1" data-aria-hidden-tab-index="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Expand" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Expand</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Collapse" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Collapse</span>
+                </span>
+            </a>
+            <a href="https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=46#section-5" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1" data-aria-hidden-tab-index="-1">
+                Topic 5
+            </a>
+            <span class="current-badge badge badge-primary ml-2 px-2 rounded-pill" tabindex="-1">
+                Highlighted
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse5" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection5" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="549" role="group" tabindex="-1">
+
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-858" data-for="cm" data-id="858" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span id="courseindex-cmicon-cplid-5-none" class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <span class="courseindex-cmicon-container" tabindex="-1">
+                        <span class="courseindex-cmicon" tabindex="-1">
+                            <span class="courseindex-cmicon-icon" id="courseindex-cmicon-observ-858" tabindex="-1">
+                                <img class="icon " src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/monologo(1).svg" alt="" title="" tabindex="-1">
+                                <span class="completioninfo courseindex-cmicon-cpl-icon" data-for="_" data-value="NaN" tabindex="-1"></span>
+                            </span>
+                        </span>
+                    </span>
+                    <a class="courseindex-link text-truncate" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/view.php?id=858" data-for="cm_name" tabindex="-1" data-aria-hidden-tab-index="-1">
+                        Unit Testing and Code Coverage
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="ml-auto" tabindex="-1">
+                        <span class="completioninfo courseindex-cmicon-cpl-eol" data-for="_" data-value="NaN" tabindex="-1"></span>
+                        <span class="dragicon" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="courseindex-section " id="course-index-section-561" data-for="section" data-id="561" data-number="6" role="treeitem" aria-owns="courseindexcollapse6" tabindex="-1" aria-selected="false">
+        <div class="courseindex-item d-flex courseindex-section-title" id="courseindexsection6" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#courseindexcollapse6" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse6" tabindex="-1" data-aria-hidden-tab-index="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Expand" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Expand</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Collapse" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Collapse</span>
+                </span>
+            </a>
+            <a href="https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=46#section-6" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1" data-aria-hidden-tab-index="-1">
+                Lab Test 1
+            </a>
+            <span class="current-badge badge badge-primary ml-2 px-2 rounded-pill" tabindex="-1">
+                Highlighted
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse6" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection6" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="561" role="group" tabindex="-1">
+
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-921" data-for="cm" data-id="921" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span id="courseindex-cmicon-cplid-6-none" class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <span class="courseindex-cmicon-container" tabindex="-1">
+                        <span class="courseindex-cmicon" tabindex="-1">
+                            <span class="courseindex-cmicon-icon" id="courseindex-cmicon-observ-921" tabindex="-1">
+                                <img class="icon " src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/monologo(1).svg" alt="" title="" tabindex="-1">
+                                <span class="completioninfo courseindex-cmicon-cpl-icon" data-for="_" data-value="NaN" tabindex="-1"></span>
+                            </span>
+                        </span>
+                    </span>
+                    <a class="courseindex-link text-truncate" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/view.php?id=921" data-for="cm_name" tabindex="-1" data-aria-hidden-tab-index="-1">
+                        Lab Test 1
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="ml-auto" tabindex="-1">
+                        <span class="completioninfo courseindex-cmicon-cpl-eol" data-for="_" data-value="NaN" tabindex="-1"></span>
+                        <span class="dragicon" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="courseindex-section " id="course-index-section-571" data-for="section" data-id="571" data-number="7" role="treeitem" aria-owns="courseindexcollapse7" tabindex="-1" aria-selected="false">
+        <div class="courseindex-item d-flex
+                
+                
+                courseindex-section-title" id="courseindexsection7" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#courseindexcollapse7" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse7" tabindex="-1" data-aria-hidden-tab-index="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Expand" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Expand</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Collapse" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Collapse</span>
+                </span>
+            </a>
+            <a href="https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=46#section-7" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1" data-aria-hidden-tab-index="-1">
+                Topic 7
+            </a>
+            <span class="current-badge badge badge-primary ml-2 px-2 rounded-pill" tabindex="-1">
+                Highlighted
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse7" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection7" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="571" role="group" tabindex="-1">
+
+
+
+                <li class="courseindex-item d-flex pageitem" id="course-index-cm-956" data-for="cm" data-id="956" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span id="courseindex-cmicon-cplid-7-none" class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <span class="courseindex-cmicon-container" tabindex="-1">
+                        <span class="courseindex-cmicon" tabindex="-1">
+                            <span class="courseindex-cmicon-icon" id="courseindex-cmicon-observ-956" tabindex="-1">
+                                <img class="icon " src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/monologo(1).svg" alt="" title="" tabindex="-1">
+                                <span class="completioninfo courseindex-cmicon-cpl-icon" data-for="_" data-value="NaN" tabindex="-1"></span>
+                            </span>
+                        </span>
+                    </span>
+                    <a class="courseindex-link text-truncate" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/view.php?id=956" data-for="cm_name" tabindex="-1" data-aria-hidden-tab-index="-1">
+                        Basic Programming in Python
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="ml-auto" tabindex="-1">
+                        <span class="completioninfo courseindex-cmicon-cpl-eol" data-for="_" data-value="NaN" tabindex="-1"></span>
+                        <span class="dragicon" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="courseindex-section " id="course-index-section-574" data-for="section" data-id="574" data-number="8" role="treeitem" aria-owns="courseindexcollapse8" tabindex="-1" aria-selected="false">
+        <div class="courseindex-item d-flex
+                dimmed
+                
+                courseindex-section-title" id="courseindexsection8" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#courseindexcollapse8" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse8" tabindex="-1" data-aria-hidden-tab-index="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Expand" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Expand</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Collapse" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Collapse</span>
+                </span>
+            </a>
+            <a href="https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=46#section-8" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1" data-aria-hidden-tab-index="-1">
+                Topic 8
+            </a>
+            <span class="current-badge badge badge-primary ml-2 px-2 rounded-pill" tabindex="-1">
+                Highlighted
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse8" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection8" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="574" role="group" tabindex="-1">
+            </ul>
+        </div>
+    </div>
+</div>
+    </div>
+</nav>
+
+    </div>
+</div>
+        <div class="drawer drawer-right show d-print-none" data-region="fixed-drawer" id="theme_boost-drawers-blocks" data-preference="drawer-open-block" data-state="show-drawer-right" data-forceopen="1" data-close-on-resize="1">
+    <div class="drawerheader">
+        <button class="btn drawertoggle icon-no-margin" data-toggler="drawers" data-action="closedrawer" data-target="theme_boost-drawers-blocks" data-toggle="tooltip" data-placement="left" title="Close block drawer">
+            <i class="icon fa fa-times fa-fw " aria-hidden="true"></i>
+        </button>
+        
+        <div class="drawerheadercontent">
+            
+        </div>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller" id="yui_3_18_1_1_1741106828331_85">
+                        <section class="d-print-none" aria-label="Blocks">
+                    
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><h2 class="sr-only">Blocks</h2><a href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#sb-1" class="sr-only sr-only-focusable">Skip Quiz navigation</a>
+
+<section id="mod_quiz_navblock" class=" block block_fake  card mb-3" role="navigation" data-block="_fake" data-instance-id="fakeid-67c72e8c46417" aria-labelledby="instance-fakeid-67c72e8c46417-header">
+
+    <div class="card-body p-3">
+
+            <h3 id="instance-fakeid-67c72e8c46417-header" class="h5 card-title d-inline">Quiz navigation</h3>
+
+
+        <div class="card-text content mt-3">
+            <div class="qn_buttons clearfix allquestionsononepage"><a class="qnbutton requiresgrading free btn thispage" id="quiznavbutton1" title="Question 1 - Requires grading" data-quiz-page="0" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956#question-2163-1"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>1<span class="accesshide"> This page <span class="flagstate"></span></span></a></div><div class="othernav"><a class="mod_quiz-next-nav" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/view.php?id=956">Finish review</a></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span></aside>
+                </section>
+
+    </div>
+</div>
+
+
+    <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers show-drawer-right drag-container">
+
+
+
+        <div class="main-inner-wrapper main-inner-outside-none main-inner-outside-nextmaincontent" id="yui_3_18_1_1_1741106828331_84">
+
+        <div id="topofscroll" class="main-inner">
+            <div class="drawer-toggles d-flex">
+                    <div class="drawer-toggler drawer-left-toggle open-nav d-print-none">
+                        <button class="btn icon-no-margin" data-toggler="drawers" data-action="toggle" data-target="theme_boost-drawers-courseindex" data-toggle="tooltip" data-placement="right" title="Open course index">
+                            <span class="sr-only">Open course index</span>
+                            <i class="icon fa fa-list fa-fw " aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="drawer-toggler drawer-right-toggle ml-auto d-print-none">
+                        <button class="btn icon-no-margin" data-toggler="drawers" data-action="toggle" data-target="theme_boost-drawers-blocks" data-toggle="tooltip" data-placement="right" title="Open block drawer">
+                            <span class="sr-only">Open block drawer</span>
+                            <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"></i></span>
+                            <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"></i></span>
+                        </button>
+                    </div>
+            </div>
+            
+            
+            <header id="page-header" class="header-maxwidth d-print-none">
+    <div class="w-100">
+        <div class="d-flex flex-wrap">
+            <div id="page-navbar">
+                <nav aria-label="Navigation bar">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="https://moodlecse.iitkgp.ac.in/moodle/course/index.php?categoryid=7">Spring Semester (2024-25)</a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=46#section-7" title="Software Engineering Laboratory ">Software Engineering Laboratory </a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=46#section-7">Topic 7</a>
+                </li>
+        
+                <li class="breadcrumb-item"><span>Basic Programming in Python</span></li>
+        </ol>
+</nav>
+            </div>
+            <div class="ml-auto d-flex">
+                
+            </div>
+            <div id="course-header">
+                
+            </div>
+        </div>
+                <div class="d-flex align-items-center">
+                        <div class="mr-auto">
+                            <div class="page-context-header"><div class="page-header-image mr-2"><div class="assessment activityiconcontainer icon-size-6 modicon_quiz"><img class="icon activityicon " aria-hidden="true" src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/monologo(2).svg" alt=""></div></div><div class="page-header-headings"><h1 class="h2">Basic Programming in Python</h1></div></div>
+                        </div>
+                    <div class="header-actions-container ml-auto" data-region="header-actions-container">
+                    </div>
+                </div>
+    </div>
+</header>
+            <div id="page-content" class="pb-3 d-print-block">
+                <div id="region-main-box">
+                    <section id="region-main" aria-label="Content">
+
+                        <span class="notifications" id="user-notifications"></span>
+                            <span id="maincontent"></span>
+                            <div class="activity-header" data-for="page-activity-header"></div>
+                        
+                        <div role="main" id="yui_3_18_1_1_1741106828331_83"><table class="generaltable generalbox quizreviewsummary"><tbody><tr><th class="cell" scope="row">Started on</th><td class="cell">Friday, 28 February 2025, 2:47 PM</td></tr><tr><th class="cell" scope="row">State</th><td class="cell">Finished</td></tr><tr><th class="cell" scope="row">Completed on</th><td class="cell">Friday, 28 February 2025, 4:06 PM</td></tr><tr><th class="cell" scope="row">Time taken</th><td class="cell">1 hour 18 mins</td></tr><tr><th class="cell" scope="row">Grade</th><td class="cell">Not yet graded</td></tr></tbody></table><form action="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/review.php?attempt=2122&amp;cmid=956" method="post" class="questionflagsaveform" autocomplete="off" id="yui_3_18_1_1_1741106828331_82"><div id="yui_3_18_1_1_1741106828331_81"><div id="question-2163-1" class="que essay manualgraded complete"><div class="info"><h3 class="no">Question <span class="qno">1</span></h3><div class="state">Complete</div><div class="grade">Marked out of 100.00</div><div class="questionflag editable" id="yui_3_18_1_1_1741106828331_18"><input type="hidden" name="q2163:1_:flagged" value="0"><input type="hidden" value="qaid=8221&amp;qubaid=2163&amp;qid=171&amp;slot=1&amp;checksum=e3333ef3124ecc74e023b97fc8ab69b1&amp;sesskey=sKdFjpFqY2&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q2163:1_:flaggedcheckbox" name="q2163:1_:flagged" value="0"><a tabindex="0" class="aabtn" role="button" aria-pressed="false" aria-label="Flagged" title="Flag this question for future reference"><img class="questionflagimage" src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/unflagged.svg" alt="">Flag question</a></div></div><div class="content" id="yui_3_18_1_1_1741106828331_80"><div class="formulation clearfix" id="yui_3_18_1_1_1741106828331_79"><h4 class="accesshide">Question text</h4><input type="hidden" name="q2163:1_:sequencecheck" value="4"><div class="qtext"><p class="MsoListParagraphCxSpFirst" style="mso-add-space: auto; text-indent: -21.3pt; line-height: normal; mso-list: l0 level1 lfo1; margin: 0cm 0cm 0cm 21.3pt;"><!-- [if !supportLists]--><span lang="EN-US" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><span style="mso-list: Ignore;">1.<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN-US">Write a simple Python program to print the following on your computer screen.</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="mso-add-space: auto; line-height: normal; margin: 0cm 0cm 0cm 21.3pt;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>*</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="mso-add-space: auto; line-height: normal; margin: 0cm 0cm 0cm 93.3pt;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp; </span>***</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="mso-add-space: auto; line-height: normal; margin: 0cm 0cm 0cm 93.3pt;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp; </span>*****</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="mso-add-space: auto; line-height: normal; margin: 0cm 0cm 0cm 93.3pt;"><span lang="EN-US">*******</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="mso-add-space: auto; line-height: normal; margin: 0cm 0cm 0cm 93.3pt;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>*</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="mso-add-space: auto; line-height: normal; margin: 0cm 0cm 0cm 93.3pt;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>*</span></p>
+<p class="MsoListParagraphCxSpLast" style="mso-add-space: auto; line-height: normal; margin: 0cm 0cm 0cm 93.3pt;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>*</span></p>
+<p class="MsoNormal" align="right" style="margin-bottom: 0cm; text-align: right; line-height: normal;"><strong><span lang="EN-US">[5 points]</span></strong></p>
+<p class="MsoListParagraphCxSpFirst" style="mso-add-space: auto; text-align: justify; text-indent: -21.3pt; line-height: normal; mso-list: l0 level1 lfo1; margin: 0cm 0cm 0cm 21.3pt;"><!-- [if !supportLists]--><span lang="EN-US" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><span style="mso-list: Ignore;">2.<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN-US">Write a program that will read G (the gravitational constant), M (mass of the earth), R (radius of the earth) and then it calculates g (the earth’s acceleration due to gravity).</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="mso-add-space: auto; text-align: justify; line-height: normal; margin: 0cm 0cm 0cm 21.3pt;"><span lang="EN-US">Hint: G = 6.67408 × 10<sup>-11</sup>&nbsp;N m<sup>2</sup>&nbsp;kg<sup>-2 </sup>, M = 5.972 × 10<sup>24</sup>&nbsp;kg, R = 6378 km. </span></p>
+<p class="MsoListParagraphCxSpLast" style="mso-add-space: auto; text-align: justify; line-height: normal; margin: 0cm 0cm 0cm 21.3pt;"><span lang="EN-US">Your program should print all input values and the output value using print(f’..’) format in Python.</span></p>
+<p class="MsoNormal" align="right" style="margin-bottom: 0cm; text-align: right; line-height: normal;"><strong><span lang="EN-US">[5 points]</span></strong></p>
+<p class="MsoListParagraphCxSpFirst" style="mso-add-space: auto; text-align: justify; line-height: normal; margin: 0cm 0cm 0cm 21.3pt;"><sup><span lang="EN-US">&nbsp;</span></sup></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-left: 21.3pt; mso-add-space: auto; text-indent: -21.3pt; mso-list: l0 level1 lfo1;"><!-- [if !supportLists]--><span lang="EN-US" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><span style="mso-list: Ignore;">3.<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN-US">Write a program which will read number of seconds. Then it will print in the format: hh-mm-ss. For example, if you read 1000, then it will print 1-46-40. </span></p>
+<p class="MsoListParagraphCxSpLast" style="margin-left: 21.3pt; mso-add-space: auto;"><span lang="EN-US">Hint: Use // (gives floor of <i>x </i>divided by <i>y</i>, e.g., 25//4 = 6)<span style="mso-spacerun: yes;">&nbsp; </span>and % (gives remainder of <i>x </i>divided by <i>y</i>, e.g. 25%4 gives 1). Note, both x and y should be integer values. Similarly, x**y return the value of x to the power y. A hint of the program is given above. However, you should try of your own!</span></p>
+<p class="MsoNormal" align="right" style="margin-bottom: 0cm; text-align: right; line-height: normal;"><strong><span lang="EN-US">[10 points]</span></strong></p>
+<p class="MsoListParagraphCxSpFirst" style="margin-left: 21.3pt; mso-add-space: auto;"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="mso-add-space: auto; text-indent: -21.3pt; line-height: normal; mso-list: l0 level1 lfo1; margin: 0cm 0cm 0cm 21.3pt;"><!-- [if !supportLists]--><span lang="EN-US" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><span style="mso-list: Ignore;">4.<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN-US">When the following program runs, it produces -17.778, which is not correct. Why the following program does not produce correct results? Debug the program and then correct it.</span></p>
+<p class="MsoListParagraphCxSpLast" style="mso-add-space: auto; line-height: normal; margin: 0cm 0cm 0cm 21.3pt;"><span lang="EN-US">&nbsp;</span></p>
+<pre style="margin-left: 36.0pt;"><span style="color: #19b219;"># Establish some variables</span></pre>
+<pre style="margin-left: 36.0pt;">degreesF, degreesC = 0, 0</pre>
+<pre style="margin-left: 36.0pt;"><span style="color: #19b219;">#<span style="mso-spacerun: yes;">&nbsp; </span>Define the relationship between F and C</span></pre>
+<pre style="margin-left: 36.0pt;">degreesC = 5/9*(degreesF - 32)</pre>
+<pre style="margin-left: 36.0pt;"><span style="color: #19b219;">#<span style="mso-spacerun: yes;">&nbsp; </span>Prompt user for degrees F</span></pre>
+<pre style="margin-left: 36.0pt;">degreesF = float(input(<span style="color: #990000;">'Enter the temperature in degrees F: '</span>))</pre>
+<pre style="margin-left: 36.0pt;"><span style="color: #19b219;">#<span style="mso-spacerun: yes;">&nbsp; </span>Report the result</span></pre>
+<pre style="margin-left: 36.0pt;">print(degreesF, <span style="color: #990000;">"degrees F =', degreesC, 'degrees C')</span></pre>
+<p class="MsoNormal" align="right" style="margin-bottom: 0cm; text-align: right; line-height: normal;"><strong><span lang="EN-US">[5 points]</span></strong></p>
+<p class="MsoListParagraphCxSpFirst" style="mso-add-space: auto; line-height: normal; margin: 0cm 0cm 0cm 21.3pt;"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="mso-add-space: auto; text-indent: -21.3pt; line-height: normal; mso-list: l0 level1 lfo1; margin: 0cm 0cm 0cm 21.3pt;"><!-- [if !supportLists]--><span lang="EN-US" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><span style="mso-list: Ignore;">5.<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN-US">Write a program which would read a string from the user. Then your program should convert it into all uppercase and lowercase strings and reverse the string. Also, print the substring from i-th to j-th letters. Read the value of i and j from the user.</span></p>
+<p class="MsoListParagraphCxSpMiddle" align="right" style="margin-bottom: 0cm; mso-add-space: auto; text-align: right; line-height: normal;"><strong><span lang="EN-US">[5 points]</span></strong></p>
+<p class="MsoListParagraphCxSpMiddle" style="mso-add-space: auto; line-height: normal; margin: 0cm 0cm 0cm 21.3pt;"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="mso-add-space: auto; text-indent: -21.3pt; line-height: normal; mso-list: l0 level1 lfo1; margin: 0cm 0cm 0cm 21.3pt;"><!-- [if !supportLists]--><span lang="EN-US" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><span style="mso-list: Ignore;">6.<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN-US">Create two lists of random numbers. Then find the union, intersection and difference of the lists.</span></p>
+<p class="MsoListParagraphCxSpLast" align="right" style="margin-bottom: 0cm; mso-add-space: auto; text-align: right; line-height: normal;"><strong><span lang="EN-US">[5 points]</span></strong></p>
+<p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoListParagraphCxSpFirst" style="margin-left: 21.3pt; mso-add-space: auto; text-indent: -21.3pt; mso-list: l0 level1 lfo1;"><!-- [if !supportLists]--><span lang="EN-US" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><span style="mso-list: Ignore;">7.<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN-US">Write a program to compute and print the electric bill based on the following chart. Total number of Electric Units will be input by the user as a floating-point number.</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="line-height: normal;"><span lang="EN-US">First 100 KWH: <span style="mso-tab-count: 2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Rs. 50/- </span></p>
+<p class="MsoListParagraphCxSpMiddle" style="line-height: normal;"><span lang="EN-US">For next 100 units <span style="mso-tab-count: 1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Rs. 0.75/unit </span></p>
+<p class="MsoListParagraphCxSpMiddle" style="line-height: normal;"><span lang="EN-US">For next 100 units <span style="mso-tab-count: 1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Rs. 1.20/unit </span></p>
+<p class="MsoListParagraphCxSpMiddle" style="line-height: normal;"><span lang="EN-US">For 300 unit onwards <span style="mso-tab-count: 1;">&nbsp;&nbsp; </span>Rs. 1.50/unit <span style="mso-spacerun: yes;">&nbsp;</span></span></p>
+<p class="MsoListParagraphCxSpMiddle" style="line-height: normal;"><span lang="EN-US">An additional surcharge of 20% is added to the bill.</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-left: 21.3pt; mso-add-space: auto; line-height: normal;"><span lang="EN-US">&nbsp;</span></p>
+<div align="center">
+<table class="MsoTableGrid" style="border-collapse: collapse; border: none; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 2.9pt 0cm 2.9pt;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; height: 1.0pt;">
+<td style="border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 2.9pt 0cm 2.9pt; height: 1.0pt;">
+<p class="MsoListParagraphCxSpMiddle" style="margin-left: 21.3pt; mso-add-space: auto;"><strong style="mso-bidi-font-weight: normal;"><span style="mso-ansi-language: EN-IN;">TEST CASE</span></strong></p>
+</td>
+<td style="border: solid windowtext 1.0pt; border-left: none; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 2.9pt 0cm 2.9pt; height: 1.0pt;">
+<p class="MsoListParagraphCxSpMiddle" style="margin-left: 21.3pt; mso-add-space: auto;"><strong style="mso-bidi-font-weight: normal;"><span style="mso-ansi-language: EN-IN;">INPUT</span></strong></p>
+</td>
+<td style="border: solid windowtext 1.0pt; border-left: none; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 2.9pt 0cm 2.9pt; height: 1.0pt;">
+<p class="MsoListParagraphCxSpLast" style="margin-left: 21.3pt; mso-add-space: auto;"><strong style="mso-bidi-font-weight: normal;"><span style="mso-ansi-language: EN-IN;">OUTPUT</span></strong></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 1; height: 1.0pt;">
+<td style="border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 2.9pt 0cm 2.9pt; height: 1.0pt;">
+<p class="MsoListParagraphCxSpFirst" style="margin-left: 21.3pt; mso-add-space: auto;"><span style="mso-ansi-language: EN-IN;">1</span></p>
+</td>
+<td style="border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 2.9pt 0cm 2.9pt; height: 1.0pt;">
+<p class="MsoListParagraphCxSpMiddle" style="margin-left: 21.3pt; mso-add-space: auto;"><span style="mso-ansi-language: EN-IN;">150</span></p>
+</td>
+<td style="border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 2.9pt 0cm 2.9pt; height: 1.0pt;">
+<p class="MsoListParagraphCxSpLast" style="margin-left: 21.3pt; mso-add-space: auto;"><span style="mso-ansi-language: EN-IN;">Rs. 105.0</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 2; height: 1.0pt;">
+<td style="border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 2.9pt 0cm 2.9pt; height: 1.0pt;">
+<p class="MsoListParagraphCxSpFirst" style="margin-left: 21.3pt; mso-add-space: auto;"><span style="mso-ansi-language: EN-IN;">2</span></p>
+</td>
+<td style="border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 2.9pt 0cm 2.9pt; height: 1.0pt;">
+<p class="MsoListParagraphCxSpMiddle" style="margin-left: 21.3pt; mso-add-space: auto;"><span style="mso-ansi-language: EN-IN;">300</span></p>
+</td>
+<td style="border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 2.9pt 0cm 2.9pt; height: 1.0pt;">
+<p class="MsoListParagraphCxSpLast" style="margin-left: 21.3pt; mso-add-space: auto;"><span style="mso-ansi-language: EN-IN;">Rs. 294.0</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 3; height: 1.0pt;">
+<td style="border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 2.9pt 0cm 2.9pt; height: 1.0pt;">
+<p class="MsoListParagraphCxSpFirst" style="margin-left: 21.3pt; mso-add-space: auto;"><span style="mso-ansi-language: EN-IN;">3</span></p>
+</td>
+<td style="border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 2.9pt 0cm 2.9pt; height: 1.0pt;">
+<p class="MsoListParagraphCxSpMiddle" style="margin-left: 21.3pt; mso-add-space: auto;"><span style="mso-ansi-language: EN-IN;">1000</span></p>
+</td>
+<td style="border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 2.9pt 0cm 2.9pt; height: 1.0pt;">
+<p class="MsoListParagraphCxSpLast" style="margin-left: 21.3pt; mso-add-space: auto;"><span style="mso-ansi-language: EN-IN;">Rs. 1554.0</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 4; mso-yfti-lastrow: yes; height: 1.0pt;">
+<td style="border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 2.9pt 0cm 2.9pt; height: 1.0pt;">
+<p class="MsoListParagraphCxSpFirst" style="margin-left: 21.3pt; mso-add-space: auto;"><span style="mso-ansi-language: EN-IN;">4</span></p>
+</td>
+<td style="border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 2.9pt 0cm 2.9pt; height: 1.0pt;">
+<p class="MsoListParagraphCxSpMiddle" style="margin-left: 21.3pt; mso-add-space: auto;"><span style="mso-ansi-language: EN-IN;">101</span></p>
+</td>
+<td style="border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 2.9pt 0cm 2.9pt; height: 1.0pt;">
+<p class="MsoListParagraphCxSpLast" style="margin-left: 21.3pt; mso-add-space: auto;"><span style="mso-ansi-language: EN-IN;">Rs. 60.9</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="MsoNormal" align="right" style="margin-bottom: 0cm; text-align: right; line-height: normal;"><strong><span lang="EN-US">[15 points]</span></strong></p>
+<p class="MsoListParagraphCxSpFirst" style="margin-left: 21.3pt; mso-add-space: auto;"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-left: 21.3pt; mso-add-space: auto; text-indent: -21.3pt; mso-list: l0 level1 lfo1;"><!-- [if !supportLists]--><span lang="EN-US" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><span style="mso-list: Ignore;">8.<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN-US">Write a program, which will read three points (x<sub>1</sub>,y<sub>1</sub>), (x<sub>2</sub>,y<sub>2</sub>) and (x<sub>3</sub>,y<sub>3</sub>) from the user. Then your program should print “Colinear” if the three points lie on the same line; otherwise print “Try with other points”.</span></p>
+<p class="MsoListParagraphCxSpMiddle" align="right" style="margin-bottom: 0cm; mso-add-space: auto; text-align: right; line-height: normal;"><strong><span lang="EN-US">[10 points]</span></strong></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-left: 21.3pt; mso-add-space: auto;"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-left: 21.3pt; mso-add-space: auto; text-indent: -21.3pt; mso-list: l0 level1 lfo1;"><!-- [if !supportLists]--><span lang="EN-US" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><span style="mso-list: Ignore;">9.<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN-US">Read any positive number from the user. <span style="mso-spacerun: yes;">&nbsp;</span>Add the number into a list, which is initially empty. Continue reading numbers from the user, add them into the last until user enter zero or any negative number. Print the smallest number, median and mean of the numbers in the list. </span></p>
+<p class="MsoListParagraphCxSpMiddle" align="right" style="margin-bottom: 0cm; mso-add-space: auto; text-align: right; line-height: normal;"><strong><span lang="EN-US">[10 points]</span></strong></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-left: 21.3pt; mso-add-space: auto;"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoListParagraphCxSpLast" style="mso-add-space: auto; text-indent: -21.3pt; line-height: normal; mso-list: l0 level1 lfo1; margin: 0cm 0cm 0cm 21.3pt;"><!-- [if !supportLists]--><span lang="EN-US" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><span style="mso-list: Ignore;">10.<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN-US">Define a function which would create a matrix of order m</span><span lang="EN-US" style="mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: Calibri;">x</span><span lang="EN-US">n of random integer values. Write a program to print the matrix in m-rows and n-columns. You should read the values of m and n from the user. Create two matrices A of order m</span><span lang="EN-US" style="mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: Calibri;">x</span><span lang="EN-US">n and B of order n</span><span lang="EN-US" style="mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: Calibri;">x</span><span lang="EN-US">p and then print the matrix C = A</span><span lang="EN-US" style="mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: Calibri;">x</span><span lang="EN-US">B, where A</span><span lang="EN-US" style="mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: Calibri;">x</span><span lang="EN-US">B denotes the multiplication of two matrices.</span></p>
+<p class="MsoNormal" style="margin-left: 21.3pt;"><span lang="EN-US">Hint: import random and then user random.random() or random.randint(a, b)</span></p>
+<p class="MsoNormal" align="right" style="margin-bottom: 0cm; text-align: right; line-height: normal;"><strong><span lang="EN-US">[10 points]</span></strong></p>
+<p class="MsoNormal" style="margin-left: 21.3pt;"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoListParagraphCxSpFirst" style="mso-add-space: auto; text-indent: -21.3pt; line-height: normal; mso-list: l0 level1 lfo1; margin: 0cm 0cm 0cm 21.3pt;"><!-- [if !supportLists]--><span lang="EN-US" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><span style="mso-list: Ignore;">11.<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN-US">Write a program which will create a list of n random numbers. Scan the list to<span style="mso-spacerun: yes;">&nbsp; </span>check which numbers are Fibonacci numbers.</span></p>
+<p class="MsoListParagraphCxSpMiddle" align="right" style="margin-bottom: 0cm; mso-add-space: auto; text-align: right; line-height: normal;"><strong><span lang="EN-US">[5 points]</span></strong></p>
+<p class="MsoListParagraphCxSpMiddle" style="mso-add-space: auto; line-height: normal; margin: 0cm 0cm 0cm 21.3pt;"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="mso-add-space: auto; line-height: normal; margin: 0cm 0cm 0cm 21.3pt;"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="mso-add-space: auto; text-indent: -21.3pt; line-height: normal; mso-list: l0 level1 lfo1; margin: 0cm 0cm 0cm 21.3pt;"><!-- [if !supportLists]--><span lang="EN-US" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><span style="mso-list: Ignore;">12.<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN-US">Following is a piece of code written by a programmer. The code seems have a minor bug. Furter the code is written without any proper comment.<span style="mso-spacerun: yes;">&nbsp; </span>You have to inspect the code, fix the bugs and add comments so that the program should be written the way it has to be. <span style="mso-spacerun: yes;">&nbsp;</span></span></p>
+<p class="MsoListParagraphCxSpMiddle" style="mso-add-space: auto; line-height: normal; margin: 0cm 0cm 0cm 21.3pt;"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US">def foo(n:int):</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp; </span><span style="mso-tab-count: 1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>i=1<span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></p>
+<p class="MsoListParagraphCxSpLast" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;</span><span style="mso-tab-count: 1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>j=1<span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></p>
+<p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp; </span><span style="mso-tab-count: 1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-tab-count: 1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>print(1, 1, end=',')</span></p>
+<p class="MsoListParagraphCxSpFirst" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US">for i in range(3,n+1):</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>k = i + j<span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes;">&nbsp;</span></span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>print(k, end= ',')<span style="mso-spacerun: yes;">&nbsp;&nbsp; </span></span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>i=j</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>j=k</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoListParagraphCxSpLast" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US">def fooSum(n:int) -&gt; int:</span></p>
+<p class="MsoNormal" style="margin-bottom: 0cm; text-indent: 36.0pt; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp; </span>sum = 0</span></p>
+<p class="MsoListParagraph" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp; </span>i=1</span></p>
+<p class="MsoNormal" style="text-indent: 18.0pt; line-height: normal; margin: 0cm 0cm 0cm 18.0pt;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp; </span>j=1</span></p>
+<p class="MsoListParagraphCxSpFirst" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp; </span>if(n==1):</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>sum = 1</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp; </span>if(n==2):</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>sum = sum +1</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp; </span>if(n&gt;=3):</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>for x in range(3,n+1):</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>k = i+j</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>sum = sum + k</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>i=j</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>j=k</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp; </span>return sum</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US"># Driver code</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US">n= int(input('Enter the value of n: '))</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US">foo<img class="icon emoticon" alt="No" title="No" src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/no.svg"></span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US">x= fooSum<img class="icon emoticon" alt="No" title="No" src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/no.svg"></span></p>
+<p class="MsoListParagraphCxSpLast" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US">print('\nThe sum of %d Foo series is %d' % (n,x))</span></p>
+<p class="MsoNormal" align="right" style="margin-bottom: 0cm; text-align: right; line-height: normal;"><strong><span lang="EN-US">[15 points]</span></strong></p>
+<p class="MsoListParagraph" style="margin-bottom: 0cm; mso-add-space: auto; line-height: normal;"><span lang="EN-US">&nbsp;</span></p></div><div class="ablock"><div class="answer"><h4 id="q2163:1_answer_label" class="sr-only">Answer text Question 1</h4><div role="textbox" aria-readonly="true" aria-labelledby="q2163:1_answer_label" class="qtype_essay_editor qtype_essay_response readonly" style="min-height: 60em;"><p>attached file below</p></div></div><div class="attachments"><h4 id="q2163:1_attachments_label" class="sr-only">Answer files Question 1</h4><ul aria-labelledby="q2163:1_attachments_label" class="list-unstyled m-0"><li class="mb-2"><a href="https://moodlecse.iitkgp.ac.in/moodle/pluginfile.php/20870/question/response_attachments/2163/1/29703/A523CS10005.ipynb?forcedownload=1"><img class="icon icon" alt="JSON text" title="JSON text" src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/json.svg"> A523CS10005.ipynb</a></li></ul></div></div></div></div></div><input type="hidden" name="sesskey" value="sKdFjpFqY2"><div class="submitbtns"></div></div></form><div class="submitbtns"><a class="mod_quiz-next-nav" href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/view.php?id=956">Finish review</a></div></div>
+                        <div class="mt-5 mb-1 activity-navigation container-fluid">
+<div class="row">
+    <div class="col-md-4">        <div class="float-left">
+                <a href="https://moodlecse.iitkgp.ac.in/moodle/mod/quiz/view.php?id=921&amp;forceview=1" id="prev-activity-link" class="btn btn-link">◀︎ Lab Test 1</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    <form method="post" action="https://moodlecse.iitkgp.ac.in/moodle/course/jumpto.php" class="form-inline" id="url_select_f67c72e8c44e4b5">
+        <input type="hidden" name="sesskey" value="sKdFjpFqY2">
+            <label for="jump-to-activity" class="sr-only">
+                Jump to...
+            </label>
+        <select id="jump-to-activity" class="custom-select urlselect" name="jump">
+                    <option value="" selected="">Jump to...</option>
+                    <option value="/mod/forum/view.php?id=639&amp;forceview=1">Announcements</option>
+                    <option value="/mod/quiz/view.php?id=650&amp;forceview=1">Week-0: C Programmig Practice</option>
+                    <option value="/mod/quiz/view.php?id=663&amp;forceview=1">Week 1: Basic C++ Programming</option>
+                    <option value="/mod/quiz/view.php?id=728&amp;forceview=1">Unit Testing</option>
+                    <option value="/mod/quiz/view.php?id=851&amp;forceview=1">Code Coverage</option>
+                    <option value="/mod/quiz/view.php?id=858&amp;forceview=1">Unit Testing and Code Coverage</option>
+                    <option value="/mod/quiz/view.php?id=921&amp;forceview=1">Lab Test 1</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary ml-1" value="Go">
+            </noscript>
+    </form>
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="float-right">
+            
+        </div>
+</div>
+</div>
+</div>
+                        
+
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+
+        
+        <footer id="page-footer" class="footer-popover bg-white">
+            <div data-region="footer-container-popover">
+                    <button class="btn btn-icon bg-secondary icon-no-margin btn-footer-popover" data-action="footer-popover" aria-label="Show footer" data-original-title="" title="">
+                        <i class="icon fa fa-question fa-fw " aria-hidden="true"></i>
+                    </button>
+            </div>
+                <div class="footer-content-popover container" data-region="footer-content-popover">
+                            <div class="footer-section p-3 border-bottom">
+        
+        
+                                        <div class="footer-support-link"><a href="https://moodlecse.iitkgp.ac.in/moodle/user/contactsitesupport.php"><i class="icon fa fa-envelope-o fa-fw " aria-hidden="true"></i>Contact site support</a></div>
+                            </div>
+                        <div class="footer-section p-3 border-bottom">
+        
+        
+        
+                                <div class="footer-support-link theme_boost_union_footer_contactlink">
+                                    <a href="https://moodlecse.iitkgp.ac.in/moodle/theme/boost_union/pages/contact.php"><i class="icon fa fa-address-card fa-fw " aria-hidden="true"></i>Contact</a>
+                                </div>
+        
+        
+        
+        
+        
+                        </div>
+                        <div class="footer-section p-3 border-bottom">
+                            <div class="logininfo">
+                                <div class="logininfo">You are logged in as <a href="https://moodlecse.iitkgp.ac.in/moodle/user/profile.php?id=19279" title="View profile">Ashutosh Sharma</a> (<a href="https://moodlecse.iitkgp.ac.in/moodle/login/logout.php?sesskey=sKdFjpFqY2">Log out</a>)</div>
+                            </div>
+                        </div>
+                    <div class="tool_usertours-resettourcontainer"></div>
+                    
+                        <div class="footer-section p-3 border-bottom">
+                            <div class="tool_dataprivacy"><a href="https://moodlecse.iitkgp.ac.in/moodle/admin/tool/dataprivacy/summary.php">Data retention summary</a></div>
+                        </div>
+                        <div class="footer-section p-3 border-bottom">
+                            <div>Powered by <a href="https://moodle.com/">Moodle</a></div>
+                        </div>
+                    <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://moodlecse.iitkgp.ac.in/moodle/lib/requirejs.php/1734535163/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://moodlecse.iitkgp.ac.in/moodle/lib/javascript.php/1734535163/lib/jquery/jquery-3.7.1.min',
+        jqueryui: 'https://moodlecse.iitkgp.ac.in/moodle/lib/javascript.php/1734535163/lib/jquery/ui-1.13.2/jquery-ui.min',
+        jqueryprivate: 'https://moodlecse.iitkgp.ac.in/moodle/lib/javascript.php/1734535163/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/javascript(6).php"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+M.util.js_pending('filter_mathjaxloader/loader'); require(['filter_mathjaxloader/loader'], function(amd) {amd.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\"\r\n});\r\n","lang":"en"}); M.util.js_complete('filter_mathjaxloader/loader');});;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('en');
+});;
+M.util.js_pending('core_courseformat/courseeditor'); require(['core_courseformat/courseeditor'], function(amd) {amd.setViewFormat("46", {"editing":false,"supportscomponents":true,"statekey":"1740827516_1741106781","overriddenStrings":[{"component":"format_topics","key":"sectionavailability_title"},{"component":"format_topics","key":"sectiondelete_title"},{"component":"format_topics","key":"sectionsdelete_title"},{"component":"format_topics","key":"sectionsdelete_info"},{"component":"format_topics","key":"sectionmove_title"},{"component":"format_topics","key":"sectionsavailability_title"},{"component":"format_topics","key":"sectionsmove_title"},{"component":"format_topics","key":"sectionsmove_info"},{"component":"format_topics","key":"selectsection"}]}); M.util.js_complete('core_courseformat/courseeditor');});;
+
+require(['core_courseformat/local/courseindex/placeholder'], function(component) {
+    component.init('course-index-placeholder');
+});
+;
+
+require(['core_courseformat/local/courseindex/drawer'], function(component) {
+    component.init('courseindex');
+});
+;
+M.util.js_pending('theme_boost_union/backtotopbutton'); require(['theme_boost_union/backtotopbutton'], function(amd) {amd.init(); M.util.js_complete('theme_boost_union/backtotopbutton');});;
+
+    require(['core/moremenu'], function(moremenu) {
+        moremenu(document.querySelector('#moremenu-67c72e8c49b1c-navbar-nav'));
+    });
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, Controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new Controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+    require(['core/usermenu'], function(UserMenu) {
+        UserMenu.init();
+    });
+;
+
+M.util.js_pending('theme_boost/drawers:load');
+require(['theme_boost/drawers'], function() {
+    M.util.js_complete('theme_boost/drawers:load');
+});
+;
+
+    require(['theme_boost/courseindexdrawercontrols'], function(component) {
+    component.init('courseindexdrawercontrols');
+    });
+;
+
+M.util.js_pending('theme_boost/drawers:load');
+require(['theme_boost/drawers'], function() {
+    M.util.js_complete('theme_boost/drawers:load');
+});
+;
+
+M.util.js_pending('theme_boost/drawers:load');
+require(['theme_boost/drawers'], function() {
+    M.util.js_complete('theme_boost/drawers:load');
+});
+;
+
+        require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+            CustomEvents.define('#jump-to-activity', [CustomEvents.events.accessibleChange]);
+            $('#jump-to-activity').on(CustomEvents.events.accessibleChange, function() {
+                if ($(this).val()) {
+                    $('#url_select_f67c72e8c44e4b5').submit();
+                }
+            });
+        });
+    ;
+
+require(['theme_boost/footer-popover'], function(FooterPopover) {
+    FooterPopover.init();
+});
+;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
+    Drawer.init();
+    M.util.js_complete('theme_boost/loader');
+
+
+});
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(20870, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});;
+M.util.js_pending('core/storage_validation'); require(['core/storage_validation'], function(amd) {amd.init(1741106756); M.util.js_complete('core/storage_validation');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.yui.add_module({"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/lib\/javascript.php\/1734535163\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/lib\/javascript.php\/1734535163\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine"]}});
+
+//]]>
+</script>
+<script src="./Basic Programming in Python_ Attempt review _ CwS @ CSE, IIT KGP_files/MathJax.js"></script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","show":"Show","hide":"Hide","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL","collapseall":"Collapse all","expandall":"Expand all"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} links to this file","select":"Select"},"admin":{"confirmdeletecomments":"Are you sure you want to delete the selected comment(s)?","confirmation":"Confirmation"},"question":{"flagged":"Flagged"},"quiz":{"functiondisabledbysecuremode":"That functionality is currently disabled","startattempt":"Start attempt","timesup":"Time is up!"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() { M.util.js_pending('random67c72e8c44e4b1'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "https:\/\/moodlecse.iitkgp.ac.in\/moodle\/question\/toggleflag.php", [{"src":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/theme\/image.php\/boost_union\/core\/1734536235\/i\/unflagged","title":"Flag this question for future reference","alt":"Flagged","text":"Flag question"},{"src":"https:\/\/moodlecse.iitkgp.ac.in\/moodle\/theme\/image.php\/boost_union\/core\/1734536235\/i\/flagged","title":"Remove flag","alt":"Flagged","text":"Remove flag"}]);  M.util.js_complete('random67c72e8c44e4b1'); });
+ M.util.js_pending('random67c72e8c44e4b2'); Y.use('mod_quiz', function(Y) { M.mod_quiz.nav.init(Y);  M.util.js_complete('random67c72e8c44e4b2'); });
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random67c72e8c44e4b6'); Y.use('mod_quiz', function(Y) { M.mod_quiz.init_review_form(Y);  M.util.js_complete('random67c72e8c44e4b6'); });
+ M.util.js_pending('random67c72e8c44e4b7'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random67c72e8c44e4b7'); });
+})();
+//]]>
+</script>
+
+                </div>
+        
+            <div class="footer-content-debugging footer-dark bg-dark text-light">
+                <div class="container-fluid footer-dark-inner">
+                    
+                </div>
+            </div>
+        
+        </footer><button id="back-to-top" class="btn btn-icon bg-secondary icon-no-margin d-print-none" aria-label="Back to top" style="display: inline-block;"><i aria-hidden="true" class="fa fa-chevron-up fa-fw "></i></button>
+        
+            <div id="footnote" class="py-3">
+                <div class="container-fluid px-0">
+                    <blockquote>
+<p><em><a href="https://moodlecse.iitkgp.ac.in/moodle">Moodle Server</a> hosted by CSE Department, Intended for Courses conducted at <a href="https://cse.iitkgp.ac.in/" target="_blank" rel="noopener">CSE Department</a>,&nbsp;<a href="http://www.iitkgp.ac.in/" target="_blank" rel="noopener">IIT Kharagpur</a>.&nbsp; </em><em>Webmaster:&nbsp;</em><strong>moodle@cse.iitkgp.ac.in</strong></p>
+</blockquote>
+                </div>
+            </div>
+    </div>
+    
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
